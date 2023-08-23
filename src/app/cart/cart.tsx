@@ -67,48 +67,54 @@ export function CartPage() {
   };
 
   return (
-    <div>
+    <div className="cart-container">
       <h1>Welcome to the Cart!</h1>
-      <h2>Products</h2>
-      <ul>
-        {products.map((product) => (
-          <li key={product.productKey}>
-            <p>{product.name}</p>
-            <p>Price: {product.price.value.centAmount / 100} EUR</p>
-            <button onClick={() => addToCart(product)}>Add to Cart</button>
-          </li>
-        ))}
-      </ul>
-      <h2>Cart</h2>
-      <ul>
-        {cart.map((cartProduct) => (
-          <li key={cartProduct.productKey}>
-            <p>{cartProduct.name}</p>
-            <p>Price: {cartProduct.price.value.centAmount / 100} EUR</p>
-            <label>Quantity:</label>
-            <select
-              value={cartProduct.quantity}
-              onChange={(event: React.ChangeEvent<HTMLSelectElement>) =>
-                updateQuantity(
-                  cartProduct.productKey,
-                  parseInt(event.target.value)
-                )
-              }
-              style={{ marginLeft: "10px" }}
-            >
-              {Array.from({ length: 10 }, (_, index) => (
-                <option key={index + 1} value={index + 1}>
-                  {index + 1}
-                </option>
-              ))}
-            </select>
-            <button onClick={() => removeFromCart(cartProduct.productKey)}>
-              Remove from Cart
-            </button>
-          </li>
-        ))}
-      </ul>
-      <p>Total Price: {totalPrice} EUR</p>
+      <section className="products-section">
+        <h2>Products</h2>
+        <ul>
+          {products.map((product) => (
+            <li key={product.productKey}>
+              <p>{product.name}</p>
+              <p>Price: {product.price.value.centAmount / 100} EUR</p>
+              <button onClick={() => addToCart(product)}>Add to Cart</button>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section className="cart-section">
+        <h2>Cart</h2>
+        <ul>
+          {cart.map((cartProduct) => (
+            <li key={cartProduct.productKey}>
+              <p>{cartProduct.name}</p>
+              <p>Price: {cartProduct.price.value.centAmount / 100} EUR</p>
+              <div>
+                <label>Quantity:</label>
+                <select
+                  value={cartProduct.quantity}
+                  onChange={(event: React.ChangeEvent<HTMLSelectElement>) =>
+                    updateQuantity(
+                      cartProduct.productKey,
+                      parseInt(event.target.value)
+                    )
+                  }
+                  style={{ marginLeft: "10px" }}
+                >
+                  {Array.from({ length: 10 }, (_, index) => (
+                    <option key={index + 1} value={index + 1}>
+                      {index + 1}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <button onClick={() => removeFromCart(cartProduct.productKey)}>
+                Remove from Cart
+              </button>
+            </li>
+          ))}
+        </ul>
+        <p>Total Price: {totalPrice.toFixed(2)} EUR</p>
+      </section>
     </div>
   );
 }
