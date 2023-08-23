@@ -1,0 +1,170 @@
+{
+  "products": [
+    {
+      "productKey": "1018985",
+      "name": "Kaerlig Bio-Orgasmusgel 15 ml",
+      "productUrl": "www.sinful.de/p/kaerlig-bio-orgasmusgel-15-ml/1018985",
+      "images": [
+        {
+          "url": "https://eu-images.contentstack.com/v3/assets/blt70200aeea7ce7e0e/bltd0108497c914d26b/6387377e1cb6d7114537a3ac/18985-kaerlig-_kologisk-orgasme-gel-15-ml-q100-02.jpg?width=1500&height=1500",
+          "label": "image",
+          "dimensions": {
+            "w": 1500,
+            "h": 1500
+          }
+        }
+      ],
+      "price": {
+        "id": "8522c6c8-4371-4051-afba-cf3508b17c66",
+        "value": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 1499,
+          "fractionDigits": 2
+        },
+        "country": "DE"
+      },
+      "quantity": 1,
+      "totalDiscount": {
+        "type": "centPrecision",
+        "currencyCode": "EUR",
+        "centAmount": 0,
+        "fractionDigits": "2"
+      },
+      "inStock": true,
+      "taxedPrice": {
+        "totalNet": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 1260,
+          "fractionDigits": 2
+        },
+        "totalGross": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 1499,
+          "fractionDigits": 2
+        },
+        "totalTax": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 239,
+          "fractionDigits": 2
+        }
+      }
+    },
+    {
+      "productKey": "1024044",
+      "name": "Cottelli Naughty Maid's Kostüm",
+      "productUrl": "www.sinful.de/p/cottelli-naughty-maid-s-kostum/1024044",
+      "images": [
+        {
+          "url": "https://eu-images.contentstack.com/v3/assets/blt70200aeea7ce7e0e/blt255a9b420fe600b1/6387725c537ef765e2f9710f/24044-cottelli-naughty-maid-s-costume_01_model_q100.jpg?width=1500&height=1500",
+          "label": "image",
+          "dimensions": {
+            "w": 1500,
+            "h": 1500
+          }
+        }
+      ],
+      "price": {
+        "id": "feabeeb8-301d-4224-9241-428acbe804aa",
+        "value": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 5499,
+          "fractionDigits": 2
+        },
+        "country": "DE"
+      },
+      "quantity": 1,
+      "totalPrice": {
+        "type": "centPrecision",
+        "currencyCode": "EUR",
+        "centAmount": 5499,
+        "fractionDigits": 2
+      },
+      "taxedPrice": {
+        "totalNet": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 4621,
+          "fractionDigits": 2
+        },
+        "totalGross": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 5499,
+          "fractionDigits": 2
+        },
+        "totalTax": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 878,
+          "fractionDigits": 2
+        }
+      },
+      "totalDiscount": {
+        "type": "centPrecision",
+        "currencyCode": "EUR",
+        "centAmount": 50,
+        "fractionDigits": "2"
+      },
+      "inStock": true
+    },
+    {
+      "productKey": "1019400",
+      "name": "Fun Factory Volta Wiederaufladbarer Klitorisvibrator",
+      "productUrl": "www.sinful.de/p/fun-factory-volta-wiederaufladbarer-klitorisvibrator/1019400",
+      "images": [
+        {
+          "url": "https://eu-images.contentstack.com/v3/assets/blt70200aeea7ce7e0e/blt687e0ed430c405cd/6387386a094a4367de4aa952/19402_fun_factory_volta_opladelig_klitoris_vibrator_q100_04_1.jpg?width=1500&height=1500",
+          "label": "image",
+          "dimensions": {
+            "w": 1500,
+            "h": 1500
+          }
+        }
+      ],
+      "price": {
+        "id": "a5ba5a24-dd95-48b5-a99d-fdef41933fbb",
+        "value": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 7299,
+          "fractionDigits": 2
+        },
+        "key": "19402-DE",
+        "country": "DE"
+      },
+      "quantity": 1,
+      "taxedPrice": {
+        "totalNet": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 6134,
+          "fractionDigits": 2
+        },
+        "totalGross": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 7299,
+          "fractionDigits": 2
+        },
+        "totalTax": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 1165,
+          "fractionDigits": 2
+        }
+      },
+      "totalDiscount": {
+        "type": "centPrecision",
+        "currencyCode": "EUR",
+        "centAmount": 0,
+        "fractionDigits": "2"
+      },
+      "inStock": false
+    }
+  ]
+}
