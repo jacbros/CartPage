@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Select } from "@/components/select"; // Adjust the path as needed
 import productsData from "@/responses/products.json"; // Adjust the path as needed
 import { IProduct } from "@/types/types"; // Adjust the path as needed
+import { SelectItem } from "@radix-ui/react-select";
 
 export interface ICartPageProps {}
 
@@ -50,12 +51,15 @@ export function CartPage() {
     setTotalPrice(newTotalPrice);
   };
 
-  const updateQuantity = (productKey: string, newQuantity: number) => {
+  const updateQuantity = (productKey: string, newQuantityString: string) => {
+    const newQuantity = parseInt(newQuantityString);
+    let updatedQuantity = newQuantity;
+
     if (newQuantity < 1) {
-      newQuantity = 1;
+      updatedQuantity = 1;
     } else if (newQuantity > 10) {
       //Only max 10, as outlined in the assignment
-      newQuantity = 10;
+      updatedQuantity = 10;
     }
 
     const updatedCart = cart.map((item) =>
@@ -90,22 +94,18 @@ export function CartPage() {
               <p>Price: {cartProduct.price.value.centAmount / 100} EUR</p>
               <div>
                 <label>Quantity:</label>
-                <select
-                  value={cartProduct.quantity}
-                  onChange={(event: React.ChangeEvent<HTMLSelectElement>) =>
-                    updateQuantity(
-                      cartProduct.productKey,
-                      parseInt(event.target.value)
-                    )
+                <Select
+                  value={cartProduct.quantity.toString()}
+                  onChange={(value) =>
+                    updateQuantity(cartProduct.productKey, value)
                   }
-                  style={{ marginLeft: "10px" }}
                 >
                   {Array.from({ length: 10 }, (_, index) => (
-                    <option key={index + 1} value={index + 1}>
+                    <Select.Item key={index + 1} value={(index + 1).toString()}>
                       {index + 1}
-                    </option>
+                    </Select.Item>
                   ))}
-                </select>
+                </Select>
               </div>
               <button onClick={() => removeFromCart(cartProduct.productKey)}>
                 Remove from Cart
