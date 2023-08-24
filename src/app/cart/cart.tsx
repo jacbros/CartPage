@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import { Select } from "@/components/select"; // Adjust the path as needed
 import productsData from "@/responses/products.json"; // Adjust the path as needed
 import { IProduct } from "@/types/types"; // Adjust the path as needed
-import { SelectItem } from "@radix-ui/react-select";
 
 export interface ICartPageProps {}
 
